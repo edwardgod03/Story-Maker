@@ -1,0 +1,41 @@
+using namespace std; 
+int main() { 
+string Name; 
+  int Age{ 0 }; 
+  string City; 
+  string College; 
+  string Profession; 
+  string Animal; 
+  string PetName; 
+  
+  cout << "Let's play a word game, fill in the following: \n"; 
+  
+  cout << "Enter a Name: "; 
+  getline(cin, Name); 
+  
+  cout << "Enter a Age: "; 
+  cin >> Age; 
+  
+  cout << "Enter a City: "; 
+  cin.ignore(100, '\n'); 
+  getline(cin, City); 
+  
+  cout << "Enter a College/University: "; 
+  getline(cin, College); 
+  
+  cout << "Enter a Profession: "; 
+  getline(cin, Profession); 
+  
+  cout << "Enter a Animal: "; 
+  getline(cin, Animal); 
+  
+  cout << "Enter a Pet's name (can be made up too): "; 
+  getline(cin, PetName); 
+  
+  cout << "\nThere was once a person named " << Name << " who lived in " << City 
+    << ". At the age of " << Age << ", " << Name 
+    << " went to college at " << College << ".\n"
+    << Name << " graduated and went to work at as a " << Profession << ". Then, " << Name << " adopted a(n) " << Animal << " named " << PetName << ". They both lived happily ever after!" << endl;
+    
+return 0; 
+} 
